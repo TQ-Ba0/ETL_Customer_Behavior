@@ -2,4 +2,6 @@
 ## Problem Description
 ## Technical
 ## Architecture
+![Architecture](image/Architecture.png)
 ## Dasboard
+![Dashboard](image/Dashboard.png)
