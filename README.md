@@ -14,11 +14,11 @@ The data engineering project focuses on building a data pipline that analyzes th
         - Mac: string (nullable = true)
         - TotalDuration: long (nullable = true)
     - _type: string (nullable = true)
-  - Data cần tìm chứa trong  field _source có format là sutruct. Sau khi xử lý . The dataset has the following columns:
-     - Appname: loại chương trình  truyền hình 
-     - Contract: Mã người dùng 
-     - Mac: Mã thiết bị của người dùng
-     - TotalDuration: Thời lượng xem chương trình  của người dùng
+  - Data to be searched is contained in the _source field with the format sutruct. After processing data has the following columns::
+     - Appname: type of television program 
+     - Contract: User code
+     - Mac: User's device code
+     - TotalDuration: Time spent watching television programs by users
 ## Main objective
 - The following steps were performed to analyze customer behavior in month:
   -  Extract: get raw data from data lake
@@ -29,30 +29,30 @@ The data engineering project focuses on building a data pipline that analyzes th
 ## Experiment:
 - ETL:
   - Output of the problem: output data has the following columns:
-      - Contract: Mã người dùng
-      - MovieDuration: thời lượng người dùng xem phim
-      - SportDuration: thời lượng người dùng xem thể thao
-      - ChilDuration: thời lượng người dùng xem thiếu nhi
-      - RelaxDuration: thời lượng người dùng xem thư giãn
-      - TvDuration: thời lượng người dùng xem Tv show
-      - TotalDuration :Tổng thời lượng xem các chương trình truyền hình của người dùng
-      - MostWatch: người dùng xem loại chương trình nào nhiều nhất
-      - Tase: các loại chương trình truyền hình người dùng xem
-      - Activeness: trong 1 tháng người dùng sử dụng dịch vụ bao nhiêu ngày
-      - Date: Ngày thực hiện việc ETL 
-- ELT: sau khi có dữ liệu trong data wareshouse, tiếp tục thực hiện ELT tới database khác trong Data warehouse. 
+      - Contract: User code
+      - MovieDuration: viewing duration of movie programs
+      - SportDuration: viewing duration of sport programs
+      - ChilDuration: viewing duration of child programs
+      - RelaxDuration: viewing duration of Relax programs
+      - TvDuration: viewing duration of TV programs
+      - TotalDuration :The total viewing duration of all types of TV programs for one user.
+      - MostWatch: The type of  program that the user watches the most.
+      - Tase: The types of  programs that the user watches.
+      - Activeness: The number of days the user uses the service in one month.
+      - Date: The date when the ETL process was performed.
+- ELT: After having data in the data warehouse, continue to perform ELT to another database within the Data warehouse.
      - Output of the problem: output data has the following columns:
-        - Total User: Tổng số lượng người dùng
-        - Total_MovieDuration: Tổng thời lượng xem 1 tháng của chương trình movie
-        - Total_SportDuration: Tổng thời lượng xem trong 1 tháng của chương trình sport
-        - Total_ChilDuration: Tổng thời lượng xem trong 1 tháng của chương trình child
-        - Total_RelaxDuration: Tổng thời lượng xem trong 1 tháng của chương trình Relax
-        - Total_TvDuration: Tổng thời lượng xem trong 1 tháng của chương trình TV
-        - TotalDuraion:  Tổng thời lượng xem của tất cả chương trình truyền hình trong 1 tháng
+        - Total User:  Total number of users
+        - Total_MovieDuration: Total monthly viewing duration of movie programs
+        - Total_SportDuration: : Total monthly viewing duration of sport programs
+        - Total_ChilDuration: Total monthly viewing duration of child programs
+        - Total_RelaxDuration:  Total monthly viewing duration of Relax programs
+        - Total_TvDuration: Total monthly viewing duration of TV programs
+        - TotalDuraion: Total monthly viewing duration of all programs above
 ## Technologies  
   - Programing language: Python(pyspark), SQL
   - Data Lake: Hadoop HDFS
-  - Data Wareshouse: MySQL
+  - Data Warehouse: MySQL
   - Data Visualization: Tableau
 
 ## Dasboard
