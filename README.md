@@ -23,8 +23,8 @@ The data engineering project focuses on building a data pipline that analyzes th
 - The following steps were performed to analyze customer behavior in month:
   -  Extract: get raw data from data lake
   -  Transform: Transform data from input to output
-  -  Load: save data to data wareshoues for analyzes
-  -  ELT to data mart
+  -  Load: save data to data warehoue for analyzes
+  -  In Data warehoue, ELT to data mart
   -  Visualzation: create dashboard
 ## Experiment:
 - ETL:
